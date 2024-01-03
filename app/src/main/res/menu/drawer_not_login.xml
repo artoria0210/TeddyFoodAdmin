@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:checkable="true"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <!--        <item android:title="XXX">-->
+    <!--            <menu>-->
+    <!--                <item android:title="YYY"/>-->
+    <!--                <item android:title="ZZZ"/>-->
+    <!--            </menu>-->
+    <!--        </item>-->
+
+    <group android:id="@+id/page" >
+        <item
+            android:id="@+id/managerLogin"
+            android:checkable="true"
+            android:icon="@android:drawable/ic_lock_power_off"
+            android:title="Login" />
+    </group>
+</menu>

@@ -1,0 +1,59 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="volunteerManagement.VolunteerListingFragment">
+
+
+    <View
+        android:id="@+id/searchDivider"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/srv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchDivider"
+        tools:listitem="@layout/activity_volunteer_listing">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <SearchView
+        android:id="@+id/searchvolunteer"
+        android:layout_width="270dp"
+        android:layout_height="58dp"
+        app:layout_constraintStart_toStartOf="@+id/searchDivider"
+        app:layout_constraintTop_toTopOf="@+id/searchDivider" />
+
+    <Button
+        android:id="@+id/btnVolunName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/name"
+        app:layout_constraintStart_toStartOf="@+id/searchDivider"
+        app:layout_constraintTop_toBottomOf="@+id/searchvolunteer" />
+
+    <Button
+        android:id="@+id/btnVolunEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/email"
+        app:layout_constraintBottom_toBottomOf="@+id/btnVolunName"
+        app:layout_constraintStart_toEndOf="@+id/btnVolunName"
+        app:layout_constraintTop_toTopOf="@+id/btnVolunName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

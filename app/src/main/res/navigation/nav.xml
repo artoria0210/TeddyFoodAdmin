@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/eventsManagementFragment"
+        android:name="my.com.teddyFood.Events.EventsManagementFragment"
+        android:label="Events Management"
+        tools:layout="@layout/fragment_events_management" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="my.com.teddyFood.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/eventsInsertFragment"
+        android:name="my.com.teddyFood.Events.EventsInsertFragment"
+        android:label="Events Insert"
+        tools:layout="@layout/fragment_events_insert" />
+    <fragment
+        android:id="@+id/eventsUpdateFragment"
+        android:name="my.com.teddyFood.Events.EventsUpdateFragment"
+        android:label="Events Update"
+        tools:layout="@layout/fragment_events_update" />
+    <fragment
+        android:id="@+id/donateHomeFragment"
+        android:name="my.com.teddyFood.Donation.DonateHomeFragment"
+        android:label="Donate Home"
+        tools:layout="@layout/fragment_donate_home" />
+    <fragment
+        android:id="@+id/donationFragment"
+        android:name="my.com.teddyFood.Donation.DonationFragment"
+        android:label="@string/food_donation"
+        tools:layout="@layout/fragment_donation" />
+    <fragment
+        android:id="@+id/thankListFragment"
+        android:name="my.com.teddyFood.Donation.ThankListFragment"
+        android:label="Thank List"
+        tools:layout="@layout/fragment_thank_list" />
+    <fragment
+        android:id="@+id/thankUpdateFragment"
+        android:name="my.com.teddyFood.Donation.ThankUpdateFragment"
+        android:label="Thank Update"
+        tools:layout="@layout/fragment_thank_update" />
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="my.com.teddyFood.Users.UserProfileFragment"
+        android:label="User Profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/addStaffFragment"
+        android:name="my.com.teddyFood.staffManagement.AddStaffFragment"
+        android:label="@string/add_staff"
+        tools:layout="@layout/fragment_add_staff" />
+    <fragment
+        android:id="@+id/staffEditDetail"
+        android:name="my.com.teddyFood.staffManagement.StaffEditDetail"
+        android:label="@string/edit_staff"
+        tools:layout="@layout/fragment_staff_edit_detail" />
+    <fragment
+        android:id="@+id/staffDetailFragment"
+        android:name="my.com.teddyFood.staffManagement.StaffDetailFragment"
+        android:label="@string/staff_detail"
+        tools:layout="@layout/fragment_staff_detail" />
+    <fragment
+        android:id="@+id/staffListingFragment"
+        android:name="my.com.teddyFood.staffManagement.StaffListingFragment"
+        android:label="@string/staff_listing"
+        tools:layout="@layout/fragment_staff_listing" />
+    <fragment
+        android:id="@+id/forgetFragment"
+        android:name="my.com.teddyFood.managerLogIn.ForgetFragment"
+        android:label="Forget Fragment"
+        tools:layout="@layout/fragment_forget" />
+    <fragment
+        android:id="@+id/managerLogin"
+        android:name="my.com.teddyFood.managerLogIn.ManagerLogin"
+        android:label="Manager Login"
+        tools:layout="@layout/fragment_manager_login" />
+    <fragment
+        android:id="@+id/unblockFragment"
+        android:name="my.com.teddyFood.managerLogIn.UnblockFragment"
+        android:label="Unblock Fragment"
+        tools:layout="@layout/fragment_unblock" />
+    <fragment
+        android:id="@+id/volunteerListingFragment"
+        android:name="volunteerManagement.VolunteerListingFragment"
+        android:label="Volunteer List"
+        tools:layout="@layout/fragment_volunteer_listing" />
+    <fragment
+        android:id="@+id/volunteerDetailFragment"
+        android:name="volunteerManagement.VolunteerDetailFragment"
+        android:label="Volunteer Details"
+        tools:layout="@layout/fragment_volunteer_detail" />
+</navigation>
